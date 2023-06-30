@@ -23,7 +23,7 @@ jobs:
       - name: Deploy Project Artifacts to Vercel
         id: deploy
         run: |
-          preview_url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} | grep "Inspect" | cut -d ' ' -f2)"
+          preview_url="$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} | grep "Inspect:" | cut -d ' ' -f2)"
           echo "PREVIEW_URL=$preview_url" >> "$GITHUB_OUTPUT"
       - uses: actions/github-script@v6
         with:
