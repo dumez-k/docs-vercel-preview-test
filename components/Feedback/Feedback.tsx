@@ -94,8 +94,7 @@ export default function PageWithJSbasedForm(props) {
                   id="comment"
                   name="comment"
                   value={comment}
-                  //TODO: CHANGE BACK
-                  placeholder="Any additional comments..................................."
+                  placeholder="Any additional comments..."
                   onChange={(e) => setComment(e.target.value)}
                   style={{
                     width: "100%",
