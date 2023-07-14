@@ -24,7 +24,7 @@ jobs:
         id: deploy
         run: |
           echo "hello"
-          vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
+          vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
       - uses: actions/github-script@v6
         with:
           script: |
