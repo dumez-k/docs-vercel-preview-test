@@ -24,7 +24,7 @@ jobs:
       - name: Deploy Project Artifacts to Vercel
         id: deploy
         run: |
-          echo "hello"
+          echo "helloooooo"
           vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
       - uses: actions/github-script@v6
         with:
